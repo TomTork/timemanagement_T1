@@ -32,12 +32,18 @@
     "dist/",
     ".cache/",
     ".tmp/",
-
-    // Do not include admin files in the server compilation
     "src/admin/",
-    // Do not include test files
     "**/*.test.*",
-    // Do not include plugins in the server compilation
-    "src/plugins/**"
+    "src/plugins/**",
+    "node_modules/",
+    "build/",
+    "dist/",
+    ".cache/",
+    ".tmp/",
+    "src/admin/",
+    "**/*.test.*",
+    "src/plugins/**",
+    "frontend/",
+    "local_databases/"
   ]
 }
