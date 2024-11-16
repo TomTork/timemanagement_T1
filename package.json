@@ -11,9 +11,11 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.4.0",
     "@strapi/plugin-users-permissions": "5.4.0",
     "@strapi/strapi": "5.4.0",
+    "bcrypt": "^5.1.1",
+    "crypto-js": "^4.2.0",
+    "node-fetch": "^3.3.2",
     "pg": "8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -21,9 +23,11 @@
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "formdata-node": "^6.0.3",
     "typescript": "^5"
   },
   "engines": {

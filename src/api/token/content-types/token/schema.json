@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tokens",
+  "info": {
+    "singularName": "token",
+    "pluralName": "tokens",
+    "displayName": "token",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    },
+    "level": {
+      "type": "integer",
+      "default": 0
+    },
+    "worktimes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::worktime.worktime",
+      "mappedBy": "token"
+    },
+    "login": {
+      "type": "string"
+    }
+  }
+}

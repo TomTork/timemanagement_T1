@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "worktimes",
+  "info": {
+    "singularName": "worktime",
+    "pluralName": "worktimes",
+    "displayName": "Worktime",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "start": {
+      "type": "datetime"
+    },
+    "end": {
+      "type": "datetime"
+    },
+    "done": {
+      "type": "boolean",
+      "default": false
+    },
+    "token": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::token.token",
+      "inversedBy": "worktimes"
+    },
+    "work": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::work.work",
+      "inversedBy": "worktimes"
+    },
+    "finish": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}
